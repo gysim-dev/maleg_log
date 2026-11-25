@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="하이코우멜러그의 멤버·직캠·발매곡을 모아보는 팬 아카이브."><title>Hikomaleg Fan Archive</title>
+<style>
+:root{--ink:#232127;--sub:#665f6c;--paper:#fcfafc;--line:#e9e2ea;--plum:#633d5e}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,sans-serif}a{color:inherit;text-decoration:none}a:focus-visible,h1:focus-visible{outline:2px solid #85617e;outline-offset:5px}a:hover{text-decoration:underline;text-underline-offset:4px}[hidden]{display:none!important}.wrap{width:min(1150px,calc(100% - 48px));margin:auto}header{background:white;border-bottom:1px solid var(--line)}.top{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:-.04em}.brand span{font-size:12px;letter-spacing:.13em;margin-left:8px;color:var(--sub)}nav{display:flex;gap:21px;font-size:14px}nav a[aria-current=page]{color:var(--plum);text-decoration:underline;text-underline-offset:6px}.hero{margin-top:28px;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:white}.cover{margin:0;position:relative;display:block;overflow:hidden;background:linear-gradient(110deg,#fbf0f5,#f4f1fa,#fff7eb);aspect-ratio:3/1}.cover img{display:block;width:100%;height:100%;object-fit:contain}.cover[hidden]{display:none}.cover-fallback{height:100%;display:grid;place-items:center;font:italic 750 clamp(40px,9vw,100px)/1 Georgia,serif;letter-spacing:-.055em}.hero-row,.split{display:flex;justify-content:space-between;align-items:center;gap:20px}.hero-row{padding:24px clamp(17px,4vw,38px)}h1,h2,p{margin:0}h1{font-size:clamp(29px,5vw,52px);line-height:1.12;letter-spacing:-.064em}h2{font-size:25px;letter-spacing:-.055em}.hero p,.meta{color:var(--sub);margin-top:8px}.button{display:inline-block;border:1px solid #443540;border-radius:99px;padding:9px 15px;background:#2e2530;color:white;font-size:14px;white-space:nowrap}.tiles{margin:28px 0 42px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.tile{min-height:91px;padding:15px 13px;border:1px solid var(--line);border-radius:13px;background:white}.tile:nth-child(3n+1){background:#fcf0f5}.tile:nth-child(3n+2){background:#f4f0fc}.tile:nth-child(3n){background:#fcf5e9}.tile span,.eyebrow{display:block;color:var(--plum);font-size:13px;font-weight:720;letter-spacing:.1em}.tile strong{display:block;margin-top:7px;font-size:17px}.feature,.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:clamp(18px,4vw,32px)}.feature .eyebrow{margin-bottom:8px}.panel{margin-top:28px;min-height:310px}.panel h1{margin-bottom:21px}.rows{display:grid;gap:9px}.record{border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;gap:9px 18px;align-items:baseline;flex-wrap:wrap}.record time{color:var(--plum);font-weight:750}.record span{color:var(--sub);font-size:14px}.record a{font-weight:700}.member-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.member{padding:19px;border-radius:12px;border:1px solid var(--line);background:#fffbf1}.member:first-child{background:#faf9fc}.member:nth-child(2){background:#fff0e8}.member img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;margin-bottom:12px;background:#f5f1f6}.member strong{font-size:20px}footer{margin-top:40px;border-top:1px solid var(--line);padding:20px 0;font-size:14px;color:var(--sub)}@media(max-width:760px){.top{align-items:flex-start;flex-direction:column;gap:9px;padding:12px 0}nav{width:100%;flex-wrap:wrap;gap:7px 15px}.tiles{grid-template-columns:repeat(3,1fr)}}@media(max-width:500px){.wrap{width:calc(100% - 24px)}.hero{margin-top:15px}.hero-row,.split{align-items:flex-start;flex-direction:column;gap:12px}.cover img{object-fit:contain}.tiles{gap:6px;margin:16px 0 24px}.tile{padding:10px;min-height:72px}.tile span{letter-spacing:.035em}.member{padding:11px}}
+.tile{display:block;overflow:hidden;padding:0}.tile-label{display:flex;min-height:90px;flex-direction:column;justify-content:center;padding:12px 14px}.tile:hover .tile-label strong{text-decoration:underline}.tile:hover{text-decoration:none}@media(max-width:500px){.tile-label{padding:8px}.tile strong{font-size:14px;overflow-wrap:anywhere}}.member-name{font-size:clamp(16px,2.5vw,22px);line-height:1.35;overflow-wrap:anywhere}.member-name span{font-size:.8em;color:var(--sub);white-space:nowrap}.member-facts{margin:12px 0 0;font-size:14px}.member-facts div{display:flex;flex-wrap:wrap;gap:2px 8px;margin:4px 0}.member-facts dt{color:var(--sub)}.member-facts dd{margin:0}.member-swatch{display:inline-block;width:.7em;height:.7em;border-radius:50%;border:1px solid #706777;margin-right:.35em}@media(max-width:500px){.member-facts div{flex-direction:column}}.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.member-hero{display:block}.member-hero .tile-label{min-height:auto;padding:14px clamp(14px,4vw,38px);border-bottom:1px solid var(--line)}.member-hero strong{font-size:20px}.hero-row{justify-content:flex-end;padding-block:12px}#home{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:16px;align-items:start;margin-top:28px}.hero{margin:0}.cover{aspect-ratio:auto;max-height:none;background:none}.cover img{width:100%;height:auto}.tiles{margin:0;grid-template-columns:minmax(0,1fr)}.tiles>.button{justify-self:start;margin-top:4px}.member-grid{max-width:800px;margin-inline:auto}.member{padding:0;overflow:hidden}.member img{aspect-ratio:auto;height:auto;object-fit:contain;border-radius:0;margin:0 0 12px}.member-name,.member-facts{margin-inline:14px}.member-facts{margin-bottom:14px}@media(max-width:620px){#home{grid-template-columns:minmax(0,1fr);margin-top:16px}.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.tiles>.button{grid-column:1/-1}.member-name,.member-facts{margin-inline:8px}}.video-card{max-width:760px}.video-card iframe{display:block;width:100%;height:auto;aspect-ratio:16/9;min-height:200px;background:#17131a;border:0;border-radius:12px}.video-card .button{margin-top:12px}.upcoming{grid-column:1/-1;padding:16px 20px;background:#f4f0fc;border:1px solid var(--line);border-radius:14px}.upcoming h2{font-size:20px}.upcoming-list{display:grid;gap:8px;margin:8px 0 0;padding:0;list-style:none}.upcoming-list li{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}.upcoming-list time{font-weight:750;color:var(--plum)}.upcoming-list span,.upcoming-empty{color:var(--sub);font-size:14px}.upcoming-list:not(:has(li)){display:none}.upcoming-list:has(li)+.upcoming-empty{display:none}.upcoming-list .upcoming-event{gap:6px 18px}.upcoming-event strong{font-size:18px}.upcoming-event p{font-size:14px;color:var(--sub);margin-top:3px}.upcoming-event b{color:var(--ink)}.video-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}.video-filters button{font:inherit;font-size:14px;cursor:pointer;padding:7px 14px;border:1px solid var(--line);border-radius:99px;background:white;color:var(--ink)}.video-filters button[aria-pressed=true]{background:#2e2530;color:white}.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}.video-item{overflow:hidden;border:1px solid var(--line);border-radius:12px}.video-preview,.video-item iframe{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#211b25;border:0}.video-preview{position:relative;padding:0;cursor:pointer}.video-preview img{width:100%;height:100%;object-fit:cover}.video-preview span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:5px 14px;border-radius:99px;background:#211b25;color:white}.video-preview:focus-visible,.video-filters button:focus-visible{outline:2px solid #85617e;outline-offset:-3px}.video-info{padding:10px 12px;color:var(--sub);font-size:14px}.video-info h2{font-size:17px;margin-bottom:4px;color:var(--ink)}
+.upcoming{padding:16px 20px;background:#faf6fd}.upcoming h2{font-size:18px}.upcoming-list{margin-top:12px}.upcoming-list .upcoming-event{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:16px 20px}.ticket-date{display:grid;text-align:center;background:#efe4fa;border-radius:10px;padding:9px 14px}.ticket-date strong{font-size:clamp(25px,4vw,36px);line-height:1.08;font-variant-numeric:tabular-nums}.ticket-date span{font-size:13px;margin-top:4px}.ticket-main h3{margin:0;font-size:clamp(18px,3vw,25px);line-height:1.25;letter-spacing:-.035em}.ticket-main .ticket-venue{margin-top:4px}.ticket-details,.ticket-details div{display:flex;gap:4px 8px;flex-wrap:wrap}.ticket-details{margin:7px 0 0;gap:5px 12px;font-size:14px}.ticket-details dt{color:var(--sub)}.ticket-details dd{margin:0;font-weight:650}.ticket-slot{border-left:1px dashed #bbaac6;padding:8px 0 8px 20px;display:grid;gap:3px}.ticket-slot strong{font-size:21px;font-variant-numeric:tabular-nums}
+.video-preview{overflow:hidden;color:white}.video-preview img{display:block;width:100%;height:100%;object-fit:cover}.video-preview span{display:grid;place-items:center;width:48px;height:42px;padding:0;border-radius:12px;background:#201927db;font-size:17px}.video-preview:hover span,.video-preview:focus-visible span{background:#633d5e}.video-info .member-tag,.member-name .member-tag{color:var(--ink)}.member-tag,.video-filters button[data-member]{--member-color:#fff;background:var(--member-color);color:var(--ink);border:1px solid #8e7d91}.member-tag{display:inline-block;border-radius:999px;padding:1px 8px}.member-tag[data-member="뮤미"],.video-filters button[data-member="뮤미"]{--member-color:#f79b52}.member-tag[data-member="에나"],.video-filters button[data-member="에나"]{--member-color:#f2d250}.video-filters button[data-member][aria-pressed="true"]{background:var(--member-color);color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.release-layout{display:grid;grid-template-columns:minmax(150px,230px) minmax(0,1fr);gap:clamp(16px,4vw,40px);align-items:center}.release-disc{position:relative;width:100%;max-width:230px;aspect-ratio:1;border-radius:50%;border:1px solid #bfb4c6;background:repeating-radial-gradient(circle,#ffffff15 0 1px,transparent 1px 4px),conic-gradient(from 20deg,#ece7f4,#cac6eb,#faf5fa,#e2c4e2,#fff0ce,#e3e9ff,#ece7f4);box-shadow:0 10px 22px #36294521}.release-disc::after{content:"";position:absolute;width:8%;aspect-ratio:1;left:50%;top:50%;transform:translate(-50%,-50%);border:1px solid #aaa0b3;border-radius:50%;background:var(--paper);box-shadow:0 0 0 5px #fff5}.disc-logo{position:absolute;left:17%;top:25%;width:66%;aspect-ratio:2.9;overflow:hidden;mix-blend-mode:multiply}.disc-logo img{position:absolute;width:285%;max-width:none;height:auto;left:-91%;top:-12%;filter:grayscale(1) contrast(1.9)}
+@media(max-width:640px){.upcoming-list .upcoming-event{grid-template-columns:auto minmax(0,1fr);gap:12px}.ticket-slot{grid-column:1/-1;border-left:0;border-top:1px dashed #bbaac6;padding:8px 0 0;display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:6px}.release-layout{grid-template-columns:minmax(0,1fr)}.release-disc{max-width:150px;margin-inline:auto}}
+.home-card{display:grid;grid-template-columns:minmax(0,130px) minmax(0,1fr);align-items:center;gap:12px;padding:10px 12px;min-height:104px}.home-card .tile-label{min-height:0;padding:0}.home-video{position:relative;overflow:hidden;aspect-ratio:16/9;display:grid;place-items:center;border-radius:8px;background:#261f2b}.home-video img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.home-card .home-play{position:relative;display:grid;place-items:center;width:32px;height:29px;border-radius:8px;background:#241c29de;color:white;letter-spacing:0}.home-card .release-disc{width:72px;margin-inline:auto}.home-card:hover .home-play,.home-card:focus-visible .home-play{background:#633d5e}@media(max-width:620px){.home-card{grid-template-columns:minmax(0,1fr);grid-template-rows:72px auto;align-items:center;gap:8px}.home-video{width:100%;max-width:128px;margin-inline:auto}.home-card .release-disc{width:64px}}
+
+#home{grid-template-columns:minmax(0,1fr)}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:12px}
+.tiles .archive-card{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 68px;align-items:stretch;gap:0;padding:0;min-height:0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.tiles .archive-card .tile-label{min-height:0;padding:10px 15px;border:0;display:flex;flex-direction:column;justify-content:center}
+.tiles .archive-card .tile-label span{font-size:13px;line-height:1.2}
+.tiles .archive-card .tile-label strong{font-size:18px;line-height:1.25;margin-top:4px}
+.tiles .card-media{position:relative;display:grid;place-items:center;width:100%;max-width:none;height:auto;aspect-ratio:3/2;margin:0;overflow:hidden;border-radius:0}
+.tiles .card-media>img{position:absolute;inset:0;display:block;width:100%;height:100%}
+.tiles .cover img{object-fit:contain}
+.tiles .home-video img{object-fit:cover}
+.tiles .home-disc{background:linear-gradient(135deg,#f6effc,#fdf4eb)}
+.tiles .home-disc .release-disc{width:52%;max-width:160px}
+.tiles>.button{grid-column:1/-1}
+@media(max-width:620px){.tiles{grid-template-columns:minmax(0,1fr)}}
+</style></head><body>
+<header><div class="wrap top"><a class="brand" href="#">Hikomaleg <span>FAN ARCHIVE</span></a><nav aria-label="주 메뉴"><a href="#" data-route="home">홈</a><a href="#members" data-route="members">멤버</a><a href="#fancams" data-route="fancams">직캠</a><a href="#songs" data-route="songs">발매곡</a></nav></div></header>
+<main class="wrap">
+
+<div id="home">
+<section class="upcoming" aria-labelledby="upcoming-title"><h2 id="upcoming-title">다가오는 일정</h2><ul class="upcoming-list">
+<li class="upcoming-event"><time class="ticket-date" datetime="2026-12-02"><strong>12.02</strong><span>2026년 · 수요일</span></time><div class="ticket-main"><h3>긴급!!! Wave To 공짜</h3><p class="ticket-venue">아틀리에홀</p><dl class="ticket-details"><div><dt>입장</dt><dd>18:30</dd></div><div><dt>시작</dt><dd>19:00</dd></div><div><dt>예매</dt><dd>무료</dd></div><div><dt>현장</dt><dd>5,000원</dd></div></dl></div><div class="ticket-slot"><span>하이코우멜러그 출연</span><strong>19:20–19:40</strong></div></li>
+</ul><p class="upcoming-empty">등록된 일정이 없어요.</p></section>
+
+<div class="tiles" aria-label="아카이브 바로가기">
+<a class="tile archive-card member-hero" href="#members"><figure class="cover card-media"><img src="images/%EC%A0%84%EC%B2%B4.jpg" alt="하이코우멜러그 단체 배너" width="2048" height="1366"><div class="cover-fallback" hidden aria-hidden="true">Hikomaleg</div></figure><div class="tile-label"><span class="eyebrow">MEMBERS</span><strong>멤버</strong></div></a><a class="tile archive-card home-card" href="#fancams"><div class="home-video card-media" aria-hidden="true"><img src="https://i.ytimg.com/vi/VYj5Sx4pce0/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"><span class="home-play">▶</span></div><div class="tile-label"><span>FANCAMS</span><strong>직캠</strong></div></a><a class="tile archive-card home-card" href="#songs"><div class="home-disc card-media"><div class="release-disc" aria-hidden="true"><div class="disc-logo"><img alt="" width="2048" height="1366"></div></div></div><div class="tile-label"><span>MUSIC</span><strong>발매곡</strong></div></a><a class="button" href="https://x.com/Hikomaleg_info" target="_blank" rel="noopener">공식 X 열기</a></div>
+</div>
+
+<section data-panel="members" class="panel" hidden><h1 tabindex="-1">멤버</h1><div class="member-grid"><article class="member"><img src="images/%EB%AE%A4%EB%AF%B8_1.jpg" alt="뮤미 프로필 사진" width="1366" height="2048" loading="lazy"><h2 class="member-name"><span class="member-tag" data-member="뮤미">뮤미 <span>Myumi</span> 🍚</span></h2><dl class="member-facts"><div><dt>오시컬러</dt><dd><span class="member-swatch" style="background:#f79b52" aria-hidden="true"></span>Orange</dd></div><div><dt>생일</dt><dd>02.21</dd></div></dl></article><article class="member"><img src="images/%EC%97%90%EB%82%98_1.jpg" alt="에나 프로필 사진" width="1366" height="2048" loading="lazy"><h2 class="member-name"><span class="member-tag" data-member="에나">에나 <span>Ena</span> 😖</span></h2><dl class="member-facts"><div><dt>오시컬러</dt><dd><span class="member-swatch" style="background:#f2d250" aria-hidden="true"></span>Yellow</dd></div><div><dt>생일</dt><dd>10.24</dd></div></dl></article><article class="member"><img src="images/%EB%85%BC_1.jpg" alt="논 프로필 사진" width="1366" height="2048" loading="lazy"><h2 class="member-name"><span class="member-tag" data-member="논">논 <span>Non</span> 🍻</span></h2><dl class="member-facts"><div><dt>오시컬러</dt><dd><span class="member-swatch" style="background:#fff" aria-hidden="true"></span>White</dd></div><div><dt>생일</dt><dd>08.23</dd></div></dl></article></div><p class="meta">2026.08.07 데뷔 · <a href="https://azito.kr/team/429">아지토 팀 프로필</a></p></section>
+<section data-panel="fancams" class="panel" hidden><h1 tabindex="-1">직캠</h1><div class="video-filters" role="group" aria-label="직캠 분류"><button type="button" data-filter="전체" aria-pressed="true">전체</button><button type="button" data-filter="뮤미" data-member="뮤미" aria-pressed="false">뮤미</button><button type="button" data-filter="에나" data-member="에나" aria-pressed="false">에나</button><button type="button" data-filter="논" data-member="논" aria-pressed="false">논</button><button type="button" data-filter="풀캠" aria-pressed="false">풀캠</button></div><p id="video-empty" class="meta" role="status" hidden>등록된 영상이 없어요.</p><div class="video-grid">
+<article class="video-item" data-category="에나"><button type="button" class="video-preview" data-video="VYj5Sx4pce0" aria-label="261118 MATCH POINT 에나 직캠 재생"><img src="https://i.ytimg.com/vi/VYj5Sx4pce0/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"><span aria-hidden="true">▶</span></button><div class="video-info"><h2>261118 MATCH POINT</h2><span class="member-tag" data-member="에나">에나</span> · <a href="https://youtu.be/VYj5Sx4pce0" target="_blank" rel="noopener">YouTube에서 보기</a></div></article>
+<article class="video-item" data-category="에나"><button type="button" class="video-preview" data-video="xfKWd2eaT60" aria-label="261113 IDOL 유메마츠리 Vol.5 에나 직캠 재생"><img src="https://i.ytimg.com/vi/xfKWd2eaT60/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"><span aria-hidden="true">▶</span></button><div class="video-info"><h2>261113 IDOL 유메마츠리 Vol.5</h2><span class="member-tag" data-member="에나">에나</span> · <a href="https://youtu.be/xfKWd2eaT60" target="_blank" rel="noopener">YouTube에서 보기</a></div></article>
+<article class="video-item" data-category="에나"><button type="button" class="video-preview" data-video="Qo-Nwlbw3LQ" aria-label="261112 Dive to stage vol.2 에나 직캠 재생"><img src="https://i.ytimg.com/vi/Qo-Nwlbw3LQ/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"><span aria-hidden="true">▶</span></button><div class="video-info"><h2>261112 Dive to stage vol.2</h2><span class="member-tag" data-member="에나">에나</span> · <a href="https://youtu.be/Qo-Nwlbw3LQ" target="_blank" rel="noopener">YouTube에서 보기</a></div></article>
+<article class="video-item" data-category="에나"><button type="button" class="video-preview" data-video="bnpMt72blwc" aria-label="261111 POCKY BOOMB 에나 직캠 재생"><img src="https://i.ytimg.com/vi/bnpMt72blwc/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"><span aria-hidden="true">▶</span></button><div class="video-info"><h2>261111 POCKY BOOMB</h2><span class="member-tag" data-member="에나">에나</span> · <a href="https://youtu.be/bnpMt72blwc" target="_blank" rel="noopener">YouTube에서 보기</a></div></article>
+<article class="video-item" data-category="에나"><button type="button" class="video-preview" data-video="0gZhTrSNixg" aria-label="261108 BERRY FES!! VOL.5 에나 직캠 재생"><img src="https://i.ytimg.com/vi/0gZhTrSNixg/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"><span aria-hidden="true">▶</span></button><div class="video-info"><h2>261108 BERRY FES!! VOL.5</h2><span class="member-tag" data-member="에나">에나</span> · <a href="https://youtu.be/0gZhTrSNixg" target="_blank" rel="noopener">YouTube에서 보기</a></div></article>
+<article class="video-item" data-category="에나"><button type="button" class="video-preview" data-video="xEHbH9RQOJI" aria-label="261028 Flare Fes. 13 에나 직캠 재생"><img src="https://i.ytimg.com/vi/xEHbH9RQOJI/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"><span aria-hidden="true">▶</span></button><div class="video-info"><h2>261028 Flare Fes. 13</h2><span class="member-tag" data-member="에나">에나</span> · <a href="https://youtu.be/xEHbH9RQOJI" target="_blank" rel="noopener">YouTube에서 보기</a></div></article>
+</div></section>
+<section data-panel="songs" class="panel" hidden><h1 tabindex="-1">발매곡</h1><div class="release-layout"><div class="release-disc" aria-hidden="true"><div class="disc-logo"><img id="disc-logo" alt="" width="2048" height="1366"></div></div><div><div class="rows"><article class="record"><a href="https://mix-call-editor.vercel.app/sheet/cmv7qg8jz0004zdao2psng9iv" target="_blank" rel="noopener">Starlight Meteor</a><span>콜·믹스표</span></article>
+<article class="record"><a href="https://mix-call-editor.vercel.app/sheet/cmv7opffq0004twjcop0yxwup" target="_blank" rel="noopener">FESTA</a><span>콜·믹스표</span></article>
+<article class="record"><a href="https://mix-call-editor.vercel.app/sheet/cmv7rtkf90007hk66uljwibtg" target="_blank" rel="noopener">Love Static</a><span>콜·믹스표</span></article></div>
+<p class="meta"><a href="https://mix-call-editor.vercel.app/sheet/cmwku5hf80003q4qagokf3ob1" target="_blank" rel="noopener">SE 콜·믹스표</a> · 인트로</p>
+<p class="meta">콜표 작성 · zoomin / <a href="https://mix-call-editor.vercel.app/?q=%ED%95%98%EC%9D%B4%EC%BD%94%EC%9A%B0%EB%A9%9C%EB%9F%AC%EA%B7%B8" target="_blank" rel="noopener">믹스콜 에디터 검색 결과</a></p></div></div></section>
+</main>
+<footer><div class="wrap split"><span>Hikomaleg Fan Archive · 비공식 팬 사이트</span><a href="https://x.com/Hikomaleg_info">@Hikomaleg_info</a></div></footer>
+<script>
+const panels = [...document.querySelectorAll('[data-panel]')];
+const home = document.getElementById('home');
+const coverPhoto = document.querySelector('.cover img');
+for (const discLogo of document.querySelectorAll('.disc-logo img')) {
+  discLogo.src = coverPhoto.getAttribute('src');
+}
+for (const previewImage of document.querySelectorAll('.video-preview img, .home-video img')) {
+  previewImage.addEventListener('error', () => {
+    previewImage.src = previewImage.src.replace('/mqdefault.jpg', '/hqdefault.jpg');
+  }, {once:true});
+}
+const videoFilters = [...document.querySelectorAll('[data-filter]')];
+const videoItems = [...document.querySelectorAll('.video-item')];
+function closeVideo() {
+  const frame = document.querySelector('.video-item iframe');
+  if (!frame) return;
+  frame.previousElementSibling.hidden = false;
+  frame.remove();
+}
+for (const filter of videoFilters) {
+  filter.addEventListener('click', () => {
+    closeVideo();
+    for (const option of videoFilters) option.setAttribute('aria-pressed', String(option === filter));
+    for (const item of videoItems) {
+      item.hidden = filter.dataset.filter !== '전체' && item.dataset.category !== filter.dataset.filter;
+    }
+    document.getElementById('video-empty').hidden = videoItems.some(item => !item.hidden);
+  });
+}
+for (const preview of document.querySelectorAll('[data-video]')) {
+  preview.addEventListener('click', () => {
+    closeVideo();
+    const frame = document.createElement('iframe');
+    frame.title = preview.getAttribute('aria-label');
+    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+    frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    frame.allowFullscreen = true;
+    frame.src = 'https://www.youtube-nocookie.com/embed/' + preview.dataset.video + '?playsinline=1&autoplay=1';
+    preview.after(frame);
+    preview.hidden = true;
+    frame.focus();
+  });
+}
+function render(moveFocus = false) {
+  const route = location.hash.slice(1);
+  const active = panels.find(panel => panel.dataset.panel === route);
+  home.hidden = Boolean(active);
+  if (route !== 'fancams') closeVideo();
+  for (const panel of panels) panel.hidden = panel !== active;
+  for (const link of document.querySelectorAll('[data-route]')) {
+    if (link.dataset.route === (active ? route : 'home')) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
+  }
+  const title = active?.querySelector('h1');
+  document.title = title ? title.textContent + ' | Hikomaleg Fan Archive' : 'Hikomaleg Fan Archive';
+  if (moveFocus) {
+    title?.focus({preventScroll:true});
+    window.scrollTo(0,0);
+  }
+}
+for (const img of document.querySelectorAll('.cover img')) {
+  const fallback = () => {
+    img.hidden = true;
+    img.nextElementSibling.hidden = false;
+  };
+  img.addEventListener('error', fallback);
+  if (img.complete && !img.naturalWidth) fallback();
+}
+addEventListener('hashchange', () => render(true));
+render();
+</script></body></html>
