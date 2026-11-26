@@ -166,14 +166,26 @@ body:has(.history-panel:not([hidden])) header nav a[aria-current="page"]{color:#
 .upcoming-list .upcoming-event{grid-template-columns:8.5rem minmax(0,1fr) 11rem}
 .upcoming-list .ticket-slot{display:grid;align-content:center;align-self:stretch}
 @media(max-width:640px){
-  .upcoming{padding-inline:14px}
-  .upcoming-list .upcoming-event{grid-template-columns:minmax(0,1fr) clamp(6.4rem,29%,9rem);gap:8px 12px}
-  .upcoming-list .ticket-date{grid-area:1/1;justify-self:start;padding-inline:10px}
+  .upcoming{padding:11px 12px}
+  .upcoming-list .upcoming-event{grid-template-columns:minmax(0,1fr) clamp(6.4rem,29%,9rem);gap:5px 8px}
+  .upcoming-list .ticket-date{grid-area:1/1;justify-self:start;display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 6px;padding:4px 7px}
   .upcoming-list .ticket-main{grid-area:2/1}
-  .upcoming-list .ticket-slot{grid-area:1/2/3/3;grid-template-columns:minmax(0,1fr);border-top:0;border-left:1px dashed #bbaac6;padding:0 0 0 8px;gap:5px}
+  .upcoming-list .ticket-slot{grid-area:1/2/3/3;grid-template-columns:minmax(0,1fr);border-top:0;border-left:1px dashed #bbaac6;padding:0 0 0 8px;gap:2px}
   .upcoming-list .ticket-slot span{font-size:12px;overflow-wrap:anywhere}
   .upcoming-list .ticket-slot strong{font-size:clamp(13px,4vw,19px);white-space:nowrap}
   .upcoming-list .ticket-booking{font-size:12px}
+  .upcoming h2{font-size:16px;margin:0}
+  .upcoming-list{margin-top:7px}
+  .upcoming-list[data-rolling] .upcoming-event:not([data-current]){display:none}
+  .upcoming-list .ticket-date strong{font-size:19px}
+  .upcoming-list .ticket-date span{font-size:11px;margin:0}
+  .upcoming .ticket-main h3{font-size:16px}
+  .upcoming .ticket-main p{font-size:12px;margin:2px 0 0}
+  .upcoming .ticket-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 5px;margin-top:4px;font-size:12px}
+  .upcoming .ticket-details div{gap:0 4px}
+  .upcoming .ticket-details dd{white-space:nowrap}
+  .upcoming-controls{margin-top:5px}
+  .schedule-expand{width:34px;height:34px}
 }
 @media(min-width:480px) and (max-width:640px){
   .upcoming-list .upcoming-event{grid-template-columns:6rem minmax(0,1fr) clamp(6.4rem,25%,9rem)}
