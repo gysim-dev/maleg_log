@@ -22,7 +22,7 @@
 .upcoming{padding:16px 20px;background:#faf6fd}.upcoming h2{font-size:18px}.upcoming-list{margin-top:12px}.upcoming-list .upcoming-event{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:16px 20px}.ticket-date{display:grid;text-align:center;background:#efe4fa;border-radius:10px;padding:9px 14px}.ticket-date strong{font-size:clamp(25px,4vw,36px);line-height:1.08;font-variant-numeric:tabular-nums}.ticket-date span{font-size:13px;margin-top:4px}.ticket-main h3{margin:0;font-size:clamp(18px,3vw,25px);line-height:1.25;letter-spacing:-.035em}.ticket-main .ticket-venue{margin-top:4px}.ticket-details,.ticket-details div{display:flex;gap:4px 8px;flex-wrap:wrap}.ticket-details{margin:7px 0 0;gap:5px 12px;font-size:14px}.ticket-details dt{color:var(--sub)}.ticket-details dd{margin:0;font-weight:650}.ticket-slot{border-left:1px dashed #bbaac6;padding:8px 0 8px 20px;display:grid;gap:3px}.ticket-slot strong{font-size:21px;font-variant-numeric:tabular-nums}
 .video-preview{overflow:hidden;color:white}.video-preview img{display:block;width:100%;height:100%;object-fit:cover}.video-preview span{display:grid;place-items:center;width:48px;height:42px;padding:0;border-radius:12px;background:#201927db;font-size:17px}.video-preview:hover span,.video-preview:focus-visible span{background:#633d5e}.video-info .member-tag,.member-name .member-tag{color:var(--ink)}.member-tag,.video-filters button[data-member]{--member-color:#fff;background:var(--member-color);color:var(--ink);border:1px solid #8e7d91}.member-tag{display:inline-block;border-radius:999px;padding:1px 8px}.member-tag[data-member="뮤미"],.video-filters button[data-member="뮤미"]{--member-color:#f79b52}.member-tag[data-member="에나"],.video-filters button[data-member="에나"]{--member-color:#f2d250}.video-filters button[data-member][aria-pressed="true"]{background:var(--member-color);color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
 .release-layout{display:grid;grid-template-columns:minmax(150px,230px) minmax(0,1fr);gap:clamp(16px,4vw,40px);align-items:center}.release-disc{position:relative;width:100%;max-width:230px;aspect-ratio:1;border-radius:50%;border:1px solid #bfb4c6;background:repeating-radial-gradient(circle,#ffffff15 0 1px,transparent 1px 4px),conic-gradient(from 20deg,#ece7f4,#cac6eb,#faf5fa,#e2c4e2,#fff0ce,#e3e9ff,#ece7f4);box-shadow:0 10px 22px #36294521}.release-disc::after{content:"";position:absolute;width:8%;aspect-ratio:1;left:50%;top:50%;transform:translate(-50%,-50%);border:1px solid #aaa0b3;border-radius:50%;background:var(--paper);box-shadow:0 0 0 5px #fff5}.disc-logo{position:absolute;left:17%;top:20%;width:66%}.disc-logo img{display:block;width:100%;height:auto}
-@media(max-width:640px){.upcoming-list .upcoming-event{grid-template-columns:auto minmax(0,1fr);gap:12px}.ticket-slot{grid-column:1/-1;border-left:0;border-top:1px dashed #bbaac6;padding:8px 0 0;display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:6px}.release-layout{grid-template-columns:minmax(0,1fr)}.release-disc{max-width:150px;margin-inline:auto}}
+@media(max-width:640px){.release-layout{grid-template-columns:minmax(0,1fr)}.release-disc{max-width:150px;margin-inline:auto}}
 .home-card{display:grid;grid-template-columns:minmax(0,130px) minmax(0,1fr);align-items:center;gap:12px;padding:10px 12px;min-height:104px}.home-card .tile-label{min-height:0;padding:0}.home-video{position:relative;overflow:hidden;aspect-ratio:16/9;display:grid;place-items:center;border-radius:8px;background:#261f2b}.home-video img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.home-card .home-play{position:relative;display:grid;place-items:center;width:32px;height:29px;border-radius:8px;background:#241c29de;color:white;letter-spacing:0}.home-card .release-disc{width:72px;margin-inline:auto}.home-card:hover .home-play,.home-card:focus-visible .home-play{background:#633d5e}@media(max-width:620px){.home-card{grid-template-columns:minmax(0,1fr);grid-template-rows:72px auto;align-items:center;gap:8px}.home-video{width:100%;max-width:128px;margin-inline:auto}.home-card .release-disc{width:64px}}
 
 #home{grid-template-columns:minmax(0,1fr)}
@@ -166,9 +166,20 @@ body:has(.history-panel:not([hidden])) header nav a[aria-current="page"]{color:#
 .upcoming-list .upcoming-event{grid-template-columns:8.5rem minmax(0,1fr) 11rem}
 .upcoming-list .ticket-slot{display:grid;align-content:center;align-self:stretch}
 @media(max-width:640px){
-  .upcoming-list .upcoming-event{grid-template-columns:6rem minmax(0,1fr)}
-  .upcoming-list .ticket-date{padding-inline:6px}
-  .upcoming-list .ticket-slot{grid-template-columns:minmax(0,1fr)}
+  .upcoming{padding-inline:14px}
+  .upcoming-list .upcoming-event{grid-template-columns:minmax(0,1fr) clamp(6.4rem,29%,9rem);gap:8px 12px}
+  .upcoming-list .ticket-date{grid-area:1/1;justify-self:start;padding-inline:10px}
+  .upcoming-list .ticket-main{grid-area:2/1}
+  .upcoming-list .ticket-slot{grid-area:1/2/3/3;grid-template-columns:minmax(0,1fr);border-top:0;border-left:1px dashed #bbaac6;padding:0 0 0 8px;gap:5px}
+  .upcoming-list .ticket-slot span{font-size:12px;overflow-wrap:anywhere}
+  .upcoming-list .ticket-slot strong{font-size:clamp(13px,4vw,19px);white-space:nowrap}
+  .upcoming-list .ticket-booking{font-size:12px}
+}
+@media(min-width:480px) and (max-width:640px){
+  .upcoming-list .upcoming-event{grid-template-columns:6rem minmax(0,1fr) clamp(6.4rem,25%,9rem)}
+  .upcoming-list .ticket-date{grid-area:1/1;justify-self:stretch;padding-inline:6px}
+  .upcoming-list .ticket-main{grid-area:1/2}
+  .upcoming-list .ticket-slot{grid-area:1/3}
 }
 [lang="ja"]{font-family:"Noto Sans JP",var(--font-site)}
 .ticket-main h3{line-height:1.22;text-wrap:balance}
